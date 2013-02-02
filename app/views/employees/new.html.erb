@@ -2,9 +2,11 @@
 
 	<%= f.label :name %>
 	<%= f.text_field :name %>
-
-	<%= f.label :salary %>
-	<%= f.number_field :salary %>
-
+</br>
+	<%= f.label :salary_in_dollars %>
+	<%= f.text_field :salary_in_dollars, :value => (number_with_precision(f.object.salary_in_dollars, :precision => 2) || 0) %>
+</br>
 	<%= f.submit "Submit" %>
 <% end %>
+
+
