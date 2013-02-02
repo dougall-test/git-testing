@@ -1,6 +1,7 @@
 VertualAttributes::Application.routes.draw do
 
   resources :companies
+  resources :employees
   resources :categories
   resources :users
 

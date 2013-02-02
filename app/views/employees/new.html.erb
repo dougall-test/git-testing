@@ -1,0 +1,10 @@
+<%= form_for @employee do |f| %>
+
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+
+	<%= f.label :salary %>
+	<%= f.number_field :salary %>
+
+	<%= f.submit "Submit" %>
+<% end %>
